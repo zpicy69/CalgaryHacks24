@@ -1,0 +1,16 @@
+# Ignore text files
+*.txt
+
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore TypeScript cache
+/.yarn/cache/
+/.pnp/
+*.tsbuildinfo
+
+# Ignore all local files
+node_modules/
+npm-debug.log
+yarn-error.log
