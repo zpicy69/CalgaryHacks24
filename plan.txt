@@ -1,13 +1,13 @@
 Tech Stack:
 
 Frontend: React JS with Tailwind CSS
-Backend: Next.js / Java
+Backend: Typescript / Java
 Database: MongoDB/ Postgres
 
 Potential Roles:
 
 Josh: 
-Derek: Figma + Backend (next.js)
+Derek: Figma + Backend (Typescript)
 Abdallah: Frontend 
 Sousa:
 Joosun: 
