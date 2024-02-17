@@ -1,10 +1,9 @@
-import { UserButton } from "@clerk/nextjs";
+import { LandingNavbar } from "@/components/landing-navbar";
 
 export default function Home() {
   return(
-    <div>
-      <h1>Home</h1>
-      <UserButton afterSignOutUrl="/" />
+    <div className="h-full">
+      <LandingNavbar />
     </div>
   );
 }
