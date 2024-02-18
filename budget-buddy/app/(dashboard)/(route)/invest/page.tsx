@@ -77,40 +77,55 @@ const StocksTable = () => {
     if (!isClient) return null;
 
     return (
-
-        <div>
-            <table>
-                <section className="mb-12">
-                    <h2 className="text-4xl font-semibold mb-4">Ready to Invest?</h2>
-                    <p className="text-lg">
-                        BudgetBuddy provides expert suggestions on what to buy based on historically high-performing stocks.
+        <div className="bg-gray-100 min-h-screen">
+            <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
+                <div className="flex-1 flex justify-center flex-col items-center text-center">
+                    <div className="relative h-12 w-12">
+                        <img src="/logo.png" alt="Logo" />
+                    </div>
+                    <h1 className="text-4xl font-bold mt-2">BudgetBuddy</h1>
+                    <p className="mt-2">
+                        Simplify Budgeting - Stay On Top Of Your Finances
                     </p>
-                </section>
-                <tbody>
-                    {Object.keys(stockData).map((category) => (
-                        <React.Fragment key={category}>
-                            <tr className='cursor-pointer' onClick={() => handleTabClick(category)}>
-                                <td>{category}</td>
-                                <td>{activeTab === category ? '▼' : '►'}</td>
-                            </tr>
-                            {activeTab === category && (
-                                <tr>
-                                    <td colSpan={2}>
-                                        <ul>
-                                            {stockData[category as keyof typeof stockData].stocks.map((stockPick) => (
-                                                <li key={stockPick.symbol}>
-                                                    <strong>{stockPick.symbol}</strong> - {stockPick.description}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <p>{stockData[category as keyof typeof stockData].description}</p>
-                                    </td>
-                                </tr>
-                            )}
-                        </React.Fragment>
-                    ))}
-                </tbody>
-            </table>
+                </div>
+
+            </nav>
+            <main className="flex-row flex-col mx-auto px-4 py-8 min-h-screen bg-[#111827]">
+                <div>
+                    <section className="mb-12">
+                        <h2 className="text-4xl font-semibold mb-4">Ready to Invest?</h2>
+                        <p className="text-lg">
+                            BudgetBuddy provides expert suggestions on what to buy based on historically high-performing stocks.
+                        </p>
+                    </section>
+                    <table className="border-collapse">
+                        <tbody>
+                            {Object.keys(stockData).map((category) => (
+                                <React.Fragment key={category}>
+                                    <tr className='cursor-pointer' onClick={() => handleTabClick(category)}>
+                                        <td className="py-2 px-4 border-b border-gray-300">{category}</td>
+                                        <td className="py-2 px-4 border-b border-gray-300">{activeTab === category ? '▼' : '►'}</td>
+                                    </tr>
+                                    {activeTab === category && (
+                                        <tr>
+                                            <td colSpan={2} className="py-4 px-4 border-b border-gray-300">
+                                                <ul>
+                                                    {stockData[category as keyof typeof stockData].stocks.map((stockPick) => (
+                                                        <li key={stockPick.symbol} className="mb-2">
+                                                            <strong>{stockPick.symbol}</strong> - {stockPick.description}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                                <p className="mt-4">{stockData[category as keyof typeof stockData].description}</p>
+                                            </td>
+                                        </tr>
+                                    )}
+                                </React.Fragment>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </main>
         </div>
     );
 };
