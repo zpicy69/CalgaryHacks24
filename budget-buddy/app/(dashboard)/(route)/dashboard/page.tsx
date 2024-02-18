@@ -348,13 +348,13 @@ function MyComponent(props) {
 
 
 const DashboardPage = () => {
-    return (
-        <div>
-            <h1>Dashboard</h1>
-            <MyComponent />
-        </div>
+  return (
+    <div>
+      <h1>Dashboard</h1>
+      <MyComponent />
+    </div>
 
-    );
+  );
 }
- 
+
 export default DashboardPage;

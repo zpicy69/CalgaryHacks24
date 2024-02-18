@@ -22,7 +22,7 @@ const LearnMorePage = () => {
                 </div>
             </nav>
 
-            <main className="container mx-auto px-4 py-8 h-full bg-[#111827]">
+            <main className="container mx-auto px-4 py-8 min-h-screen bg-[#111827]">
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-4">Learn More About Investing in Canada</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -31,9 +31,9 @@ const LearnMorePage = () => {
                             <p className="text-gray-100">
                                 Learn how TFSA works, its benefits, contribution limits, and various investment options.
                             </p>
-                            {/* <Link href="/tfsa">
-                                <a className="text-blue-500 mt-2 inline-block hover:underline">Learn More</a>
-                            </Link> */}
+                            <Link href="/tfsa">
+                                <span className="text-black-500 mt-2 inline-block hover:underline">Learn More</span>
+                            </Link>
                         </div>
                         <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
                             <h3 className="text-xl font-semibold mb-4">All About First Home Savings Accounts (FHSA)</h3>
