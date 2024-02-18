@@ -32,7 +32,7 @@ const TFSA = () => {
                         The TFSA contribution limit for 2023 is $7000.</p>
 
                     {/* image */}
-                    <div className="relative h-96 w-full">
+                    <div className="relative h-110 w-full mb-12 mt-12">
                         <Image src="/tfsa.jpg" alt="TFSA" width={800} height={600} priority />
                     </div>
                     <p className="text-gray-100">
