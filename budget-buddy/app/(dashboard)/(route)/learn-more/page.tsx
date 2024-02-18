@@ -32,7 +32,7 @@ const LearnMorePage = () => {
                                 Learn how TFSA works, its benefits, contribution limits, and various investment options.
                             </p>
                             <Link href="/tfsa">
-                                <span className="text-black-500 mt-2 inline-block hover:underline">Learn More</span>
+                                <button className="text-black-500 mt-2 inline-block hover:underline">Learn More</button>
                             </Link>
                         </div>
                         <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
