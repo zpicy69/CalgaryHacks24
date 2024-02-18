@@ -46,40 +46,41 @@ const LearnMorePage = () => {
                 </section>
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-4">General Investing Tips</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-xl font-semibold mb-4">All About Investing in Canada</h3>
-                            <p className="text-gray-100">
-                                Investments in Canada fall into three main categories: stocks, bonds, and cash.
-                            </p>
-                        </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6"></div>
+                    <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md mb-8">
+                        <h2 className="text-3xl font-bold mb-4">All About Investing in Canada</h2>
+                        <p className="text-gray-100">
+                            Investments in Canada fall into three main categories: stocks, bonds, and cash.
+                        </p>
+                    </div>
+                    <div className="flex gap-6">
                         <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
                             <h3 className="text-xl font-semibold mb-4">Stocks</h3>
-                            <p className="text-gray-100">
+                            <p className="text-gray-100 mb-4">
                                 Stocks are a type of security that gives stockholders a share of ownership in a company.
                             </p>
                             <p className="text-gray-100">
                                 Buy stocks in companies you believe will grow and hold them for the long term.
                             </p>
-
-                            <h3 className="text-xl font-semibold mb-4 mt-4">Bonds</h3>
-                            <p className="text-gray-100">
+                        </div>
+                        <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
+                            <h3 className="text-xl font-semibold mb-4">Bonds</h3>
+                            <p className="text-gray-100 mb-4">
                                 Bonds are a type of fixed-income investment that provides income through regular interest payments.
                             </p>
                             <p className="text-gray-100">
                                 Bonds are generally considered less risky than stocks.
                             </p>
-
-                            <h3 className="text-xl font-semibold mb-4 mt-4">Cash</h3>
-                            <p className="text-gray-100">
+                        </div>
+                        <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
+                            <h3 className="text-xl font-semibold mb-4">Cash</h3>
+                            <p className="text-gray-100 mb-4">
                                 Cash investments include everyday bank accounts, high-interest savings accounts, and term deposits.
                             </p>
-                            <p className="text-gray-100">
+                            <p className="text-gray-100 mb-4">
                                 Cash investments are considered the safest form of investment.
                             </p>
                             <p className="text-gray-100">In Canada, many institutions offer cash accounts.</p>
-
-
                         </div>
                     </div>
 
@@ -88,15 +89,37 @@ const LearnMorePage = () => {
                     <h2 className="text-3xl font-bold mb-4">BudgetBuddy Recommends These Investing Accounts</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-xl font-semibold mb-4">WealthSimple Cash Account</h3>
-                            <p className="text-gray-100">
-                                Wealthsimple Cash offers no monthly account fees, 4% interest on your balance, and a sleek metal card.</p>
-                            <h3 className="text-xl font-semibold mb-4 mt-4">RBC High-Interest eSavings Account</h3>
-                            <p className="text-gray-100">
-                                RBC High-Interest eSavings Account offers a high-interest rate and no monthly fees.</p>
-                            <h3 className="text-xl font-semibold mb-4 mt-4">Tangerine Savings Account</h3>
-                            <p className="text-gray-100">
-                                Tangerine Savings Account offers a high-interest rate and no monthly fees.</p>
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold mb-2">WealthSimple Cash Account</h3>
+                                <p className="text-gray-100">
+                                    Wealthsimple Cash offers no monthly account fees, 4% interest on your balance, and a sleek metal card.
+                                </p>
+                                <Link href="https://wealthsimple.com/cash" target="_blank" rel="noopener noreferrer">
+                                    <Button className="text-black-500 hover:text-black-800 mt-2 inline-block hover:underline">Visit Website</Button>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold mb-2">RBC High-Interest eSavings Account</h3>
+                                <p className="text-gray-100">
+                                    RBC High-Interest eSavings Account offers a high-interest rate and no monthly fees.
+                                </p>
+                                <Link href="https://www.rbcroyalbank.com/accounts/e-savings.html" target="_blank" rel="noopener noreferrer">
+                                    <Button className="text-black-500 hover:text-black-800 mt-2 inline-block hover:underline">Visit Website</Button>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">
+                            <div className="mb-6">
+                                <h3 className="text-xl font-semibold mb-2">Tangerine Savings Account</h3>
+                                <p className="text-gray-100">
+                                    Tangerine Savings Account offers a high-interest rate and no monthly fees.
+                                </p>
+                                <Link href="https://www.tangerine.ca/en/personal/save/savings-account" target="_blank" rel="noopener noreferrer">
+                                    <Button className="text-black-500 hover:text-black-800 mt-2 inline-block hover:underline">Visit Website</Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
