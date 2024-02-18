@@ -28,8 +28,8 @@ export const LandingNavbar = () => {
                 </Link>
             </div>
 
-            <div className="relative h-24 w-24">
-                <Image src="/image.png" layout="fill" alt="Chart Logo" priority />
+            <div className="relative w-80 h-80">
+                <Image src="/image.png" layout="fill" objectFit="cover" alt="Chart Logo" priority />
             </div>
         </nav>
     );

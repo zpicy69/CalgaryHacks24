@@ -1,7 +1,6 @@
 // Code a design for how it works, track your expenses
 // Step 1: Enter the Money You Spent Last Month
 // BudgetBuddy automatically calculates the money you can save
-// begin code
 
 const LearnMoreLayout = ({ children }: { children: React.ReactNode; }) => {
     return (
