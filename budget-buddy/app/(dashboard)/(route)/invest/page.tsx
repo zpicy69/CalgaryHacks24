@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Sample data for stock categories and their corresponding stock picks
 const stockData = {
@@ -10,11 +10,18 @@ const stockData = {
 };
 
 const StocksTable = () => {
+    const [isClient, setIsClient] = useState(false);
     const [activeTab, setActiveTab] = useState<string | null>(null);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const handleTabClick = (category: string) => {
         setActiveTab(activeTab === category ? null : category);
     };
+
+    if (!isClient) return null;
 
     return (
         <div>
