@@ -8,29 +8,38 @@ export const LandingNavbar = () => {
     const { isSignedIn } = useAuth();
 
     return (
-        <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
-            <Link href="/learn-more">
-                <span className="text-sm uppercase cursor-pointer hover:underline">Learn More</span>
-            </Link>
+        <div className="flex flex-col items-center py-4 px-6 bg-[#111827] text-white">
+            <nav className="w-full flex justify-between items-center">
+                <Link href="/learn-more">
+                    <span className="text-sm uppercase cursor-pointer hover:underline">Learn More</span>
+                </Link>
 
-            <div className="flex-1 flex justify-center flex-col items-center text-center">
-                <div className="relative h-12 w-12">
-                    <Image src="/logo.png" layout="fill" alt="Logo" priority />
+                <div className="text-right">
+                    <span className="text-xs">Built By University Students, For University Students</span>
                 </div>
-                <h1 className="text-4xl font-bold mt-2">BudgetBuddy</h1>
+            </nav>
+            <div className="text-center my-4">
+                <div className="flex justify-center items-center">
+                    <div className="relative h-12 w-12 mr-3">
+                        <Image src="/logo.png" layout="fill" alt="Logo" priority />
+                    </div>
+                    <h1 className="text-4xl font-bold">BudgetBuddy</h1>
+                </div>
                 <p className="mt-2">
                     Simplify Budgeting - Stay On Top Of Your Finances
                 </p>
-                <Link href="/dashboard">
-                    <button className="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-2 rounded-full transition-all">
+                <p className="mt-1">
+                    Discover Top Stocks And Watch Your Money Grow
+                </p>
+                <p className="mt-1 mb-4">
+                    Learn About Savings Accounts
+                </p>
+                <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+                    <button className="bg-teal-500 hover:bg-teal-600 text-white font-medium px-6 py-2 rounded-full transition-all">
                         Get Started
                     </button>
                 </Link>
             </div>
-
-            <div className="relative h-24 w-24">
-                <Image src="/image.png" layout="fill" alt="Chart Logo" priority />
-            </div>
-        </nav>
+        </div>
     );
 };
