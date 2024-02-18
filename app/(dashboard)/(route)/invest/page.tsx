@@ -83,7 +83,7 @@ const StocksTable = () => {
 
     const handleInvestmentAmountChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const amount = Number(event.target.value);
-        if(amount <= 0) {
+        if (amount <= 0) {
             alert('Please enter a valid amount');
             setInvestmentAmount(null);
             return;
@@ -139,10 +139,29 @@ const StocksTable = () => {
                         <p className="text-lg mb-4">Experts recommend investing between <strong>20% - 50%</strong> of your leftover income after expenses.</p>
                         <input
                             type="number"
-                            className="border border-gray-300 p-2 rounded text-black"
+                            className="border border-gray-300 p-2 rounded text-black mr-4"
                             placeholder="Amount to invest"
                             onChange={handleInvestmentAmountChange}
                         />
+                        <button
+                            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-4"
+                            onClick={() => {
+                                const shareText = `I am investing $${investmentAmount} today! #BudgetBuddy`;
+                                window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`, '_blank');
+                            }}
+                        >
+                            Share on Twitter
+                        </button>
+                        <button
+                            className="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded"
+                            onClick={() => {
+                                const shareText = `I am investing $${investmentAmount} today! #BudgetBuddy`;
+
+                                window.open(`https://www.instagram.com/?text=${encodeURIComponent(shareText)}`, '_blank');
+                            }}
+                        >
+                            Share on Instagram
+                        </button>
                     </div>
                     <table className="border-collapse">
                         <tbody>
@@ -174,6 +193,7 @@ const StocksTable = () => {
                             ))}
                         </tbody>
                     </table>
+
                 </div>
             </main>
 
