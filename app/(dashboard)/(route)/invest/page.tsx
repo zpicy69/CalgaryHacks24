@@ -82,7 +82,13 @@ const StocksTable = () => {
     };
 
     const handleInvestmentAmountChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setInvestmentAmount(Number(event.target.value));
+        const amount = Number(event.target.value);
+        if(amount <= 0) {
+            alert('Please enter a valid amount');
+            setInvestmentAmount(null);
+            return;
+        }
+        setInvestmentAmount(amount);
     };
 
     if (!isClient) return null;
@@ -110,7 +116,7 @@ const StocksTable = () => {
             <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
                 <div className="flex-1 flex justify-center flex-col items-center text-center">
                     <div className="relative h-12 w-12">
-                        <Link className='cursor-pointer' href="/dashboard">
+                        <Link className='cursor-pointer' href="/">
                             <img src="/logo.png" alt="Logo" />
                         </Link>
                     </div>
