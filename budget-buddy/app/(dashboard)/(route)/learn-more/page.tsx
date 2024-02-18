@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowBigLeftDash } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const LearnMorePage = () => {
     return (
@@ -22,6 +24,11 @@ const LearnMorePage = () => {
 
             <main className="container mx-auto px-4 py-8 min-h-screen bg-[#111827]">
                 <section className="mb-12">
+                    <Link href="/">
+                        <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-12">
+                            <ArrowLeft size={24} />
+                        </button>
+                    </Link>
                     <h2 className="text-3xl font-bold mb-4">Learn More About Investing in Canada</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">

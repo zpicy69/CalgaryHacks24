@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,8 +22,9 @@ const TFSA = () => {
                 <section className="mb-12">
                     <Link href="/learn-more">
                         <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-12">
-                            Go Back
-                        </button></Link>
+                            <ArrowLeft size={24} />
+                        </button>
+                    </Link>
                     <h2 className="text-3xl font-bold mb-4">All About Tax-Free Savings Accounts (TFSA)</h2>
                     <p className="text-gray-100">
                         Learn how TFSA works, its benefits, contribution limits, and various investment options.

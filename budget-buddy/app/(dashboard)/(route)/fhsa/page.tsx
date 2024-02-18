@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,8 +23,9 @@ const FHSA = () => {
                 <section className="mb-12">
                     <Link href="/learn-more">
                         <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-12">
-                            Go Back
-                        </button></Link>
+                            <ArrowLeft size={24} />
+                        </button>
+                    </Link>
                     <h2 className="text-3xl font-bold mb-4">All About First Home Savings Accounts (FHSA)</h2>
                     <p className="text-gray-100">
                         Explore FHSA and how it can help you save for your first home purchase.
