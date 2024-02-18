@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const LearnMorePage = () => {
+const LearnMorePage = () => {
     return (
         <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
             <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
@@ -33,3 +33,5 @@ export const LearnMorePage = () => {
         </div>
     );
 };
+
+export default LearnMorePage;
