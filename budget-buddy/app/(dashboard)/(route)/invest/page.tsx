@@ -35,7 +35,7 @@ const StocksTable = () => {
                 <tbody>
                     {Object.keys(stockData).map((category) => (
                         <React.Fragment key={category}>
-                            <tr onClick={() => handleTabClick(category)}>
+                            <tr className='cursor-pointer' onClick={() => handleTabClick(category)}>
                                 <td>{category}</td>
                                 <td>{activeTab === category ? '▼' : '►'}</td>
                             </tr>
