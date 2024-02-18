@@ -1,4 +1,6 @@
 import * as React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 function MyComponent() {
   return (
@@ -325,9 +327,16 @@ function MyComponent() {
           setting up your budget and exploring investment options,
         </div>{" "}
         <div className="mt-7 max-w-full h-px bg-stone-300 rounded-[98.75px] w-[969px]" />{" "}
-        <div className="justify-center self-start px-3.5 py-5 mt-16 ml-4 text-2xl font-semibold tracking-tight whitespace-nowrap bg-teal-700 rounded-2xl shadow-2xl max-md:mt-10 max-md:ml-2.5">
+        <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" >
+          <Button
+            className=" underline justify-center self-start px-3.5 py-5 mt-16 ml-4 text-2xl font-semibold tracking-tight whitespace-nowrap bg-teal-700 hover:bg-teal-800 rounded-2xl shadow-2xl max-md:mt-10 max-md:ml-2.5"
+            variant="primary"
+            size="large"
+            fullWidth={false}
+          >
           Contact Us
-        </div>{" "}
+          </Button>
+        </Link>
         <div className="flex gap-5 justify-between items-center mt-11 w-full max-w-screen-lg text-2xl max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
           <div className="flex-auto self-stretch my-auto"></div>{" "}
           <img
