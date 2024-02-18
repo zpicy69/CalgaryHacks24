@@ -99,7 +99,7 @@ const StocksTable = () => {
                 const returnLastYear = selectedStock.returnLastYear;
                 const expectedValueAfter5Years =
                     investmentAmount * Math.pow(1 + parseFloat(returnLastYear) / 100, 5);
-                const popupText = `Stock Symbol: ${symbol}\nReturn Last Year: ${returnLastYear}\n\nInvesting $${investmentAmount} in ${symbol} Today? \n\nAfter 5 years, this will grow to: $${expectedValueAfter5Years.toFixed(2)}`;
+                const popupText = `Stock Symbol: ${symbol}\nReturn Last Year: ${returnLastYear}\n\nInvesting $${investmentAmount} in ${symbol} Today? \n\nAfter 5 years, BudgetBuddy predicts this will grow to: $${expectedValueAfter5Years.toFixed(2)}`;
                 alert(popupText);
             }
         };
