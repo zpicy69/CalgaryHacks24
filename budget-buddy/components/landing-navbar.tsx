@@ -1,36 +1,37 @@
 "use client";
 
+import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useAuth } from "@clerk/nextjs";
+import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
+
+const font = Montserrat({
+    weight: "600",
+    subsets: ["latin"]
+});
 
 export const LandingNavbar = () => {
     const { isSignedIn } = useAuth();
 
-    return (
-        <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
-            <Link href="/learn-more">
-                <span className="text-sm uppercase cursor-pointer hover:underline">Learn More</span>
-            </Link>
-            
-            <div className="flex-1 flex justify-center flex-col items-center text-center">
-                <div className="relative h-12 w-12">
-                    <Image src="/logo.png" layout="fill" alt="Logo" priority />
+    return(
+        <nav className="p-4 bg-transparent flex items-center justify-between">
+            <Link href="/" className="flex items-center">
+                <div className="relative h-8 w-8 mr-4">
+                    <Image fill alt="Logo" src="/logo.png" />
                 </div>
-                <h1 className="text-4xl font-bold mt-2">BudgetBuddy</h1>
-                <p className="mt-2">
-                    Simplify Budgeting - Stay On Top Of Your Finances
-                </p>
-                <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-                    <button className="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-2 rounded-full transition-all">
+                <h1 className={cn("text-white font-bold text-2xl", font.className)}>
+                    BudgetBuddy
+                </h1>
+            </Link>
+            <div className="flex items-center gap-x-2">
+                <Link href={isSignedIn ? "/dashboard" : "/settings"}>
+                    <Button className="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-2 rounded-full transition-all">
                         Get Started
-                    </button>
+                    </Button>
                 </Link>
-            </div>
-            
-            <div className="relative h-24 w-24">
-                <Image src="/image.png" layout="fill" alt="Chart Logo" priority />
             </div>
         </nav>
     );
-};
+}
