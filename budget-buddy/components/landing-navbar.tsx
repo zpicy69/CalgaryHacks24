@@ -21,7 +21,7 @@ export const LandingNavbar = () => {
                 <p className="mt-2">
                     Simplify Budgeting - Stay On Top Of Your Finances
                 </p>
-                <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+                <Link href="/dashboard">
                     <button className="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-2 rounded-full transition-all">
                         Get Started
                     </button>
