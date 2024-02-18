@@ -2,6 +2,7 @@
 // Stocks and compound interest
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const LearnMorePage = () => {
     return (
@@ -32,7 +33,7 @@ const LearnMorePage = () => {
                                 Learn how TFSA works, its benefits, contribution limits, and various investment options.
                             </p>
                             <Link href="/tfsa">
-                                <button className="text-black-500 mt-2 inline-block hover:underline">Learn More</button>
+                                <Button className="text-black-500 hover:text-black-800 mt-2 inline-block hover:underline">Learn More</Button>
                             </Link>
                         </div>
                         <div className="bg-[#2D796D] text-white p-6 rounded-lg shadow-md">

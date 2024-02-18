@@ -9,7 +9,6 @@ function MyComponent() {
             <div className="flex flex-col w-[41%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col mt-8 text-xl text-white max-md:mt-10 max-md:max-w-full">
                 <div className="self-center capitalize whitespace-nowrap leading-[160%]">
-                  Learn more
                 </div>
                 <div className="mt-32 text-7xl font-extrabold leading-[96.56px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
                   BudgetBuddy
@@ -22,8 +21,7 @@ function MyComponent() {
                   <br />
                   Learn About Savings Accounts
                 </div>
-                <div className="flex flex-col justify-center px-5 py-4 mt-8 w-40 max-w-full text-2xl font-semibold tracking-tight text-center whitespace-nowrap bg-teal-700 rounded-2xl shadow-2xl">
-                  <div className="justify-center px-1.5 py-1">Get Started</div>
+                <div className="flex flex-col justify-center px-5 py-4 mt-8 w-40 max-w-full text-2xl font-semibold tracking-tight text-center whitespace-nowrap bg-zinc-900 rounded-2xl shadow-2xl">
                 </div>
               </div>
             </div>
@@ -331,7 +329,7 @@ function MyComponent() {
           Contact Us
         </div>{" "}
         <div className="flex gap-5 justify-between items-center mt-11 w-full max-w-screen-lg text-2xl max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-          <div className="flex-auto self-stretch my-auto">Learn More</div>{" "}
+          <div className="flex-auto self-stretch my-auto"></div>{" "}
           <img
             loading="lazy"
             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e4594d9c209b98da31f76380f7073bbfacced8680b0487a910639344e224fba3?apiKey=ceca4ab5cadc44aa945984df769c0873&"
@@ -350,7 +348,6 @@ function MyComponent() {
 const DashboardPage = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
       <MyComponent />
     </div>
 
