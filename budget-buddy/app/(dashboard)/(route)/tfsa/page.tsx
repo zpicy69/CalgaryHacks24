@@ -18,7 +18,7 @@ const TFSA = () => {
 
             </nav>
 
-            <main className="container mx-auto px-4 py-8 min-h-screen bg-[#111827]">
+            <main className="flex-row flex-col mx-auto px-4 py-8 min-h-screen bg-[#111827]">
                 <section className="mb-12">
                     <Link href="/learn-more">
                         <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-12">
