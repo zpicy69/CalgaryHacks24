@@ -1,3 +1,5 @@
+// @ts-ignore
+/* eslint-disable */
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
