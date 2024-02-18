@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 const BudgetTrackPage = () => {
     return (
@@ -14,6 +15,11 @@ const BudgetTrackPage = () => {
             </nav>
 
             <main className="container mx-auto p-4 py-8">
+                <Link href="/">
+                      <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-12">
+                          <ArrowLeft size={24} />
+                      </button>
+                  </Link>
                 <section className="mb-12">
                     <h2 className="text-4xl font-semibold mb-4">Track Your Budget</h2>
                     <p className="text-lg">
