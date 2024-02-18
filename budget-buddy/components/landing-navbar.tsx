@@ -40,6 +40,10 @@ export const LandingNavbar = () => {
                     </button>
                 </Link>
             </div>
-        </div>
+
+            <div className="relative h-24 w-24">
+                <Image src="/image.png" layout="fill" alt="Chart Logo" priority />
+            </div>
+        </nav>
     );
 };
