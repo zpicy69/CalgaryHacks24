@@ -41,9 +41,9 @@ const LearnMorePage = () => {
                             <p className="text-gray-100">
                                 Explore FHSA and how it can help you save for your first home purchase.
                             </p>
-                            {/* <Link href="/fhsa">
-                                <a className="text-blue-500 mt-2 inline-block hover:underline">Learn More</a>
-                            </Link> */}
+                            <Link href="/fhsa">
+                                <Button className="text-black-500 hover:text-black-800 mt-2 inline-block hover:underline">Learn More</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>

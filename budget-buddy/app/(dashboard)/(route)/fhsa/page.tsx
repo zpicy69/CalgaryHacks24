@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const TFSA = () => {
+const FHSA = () => {
     return (
         <div className="bg-gray-100 min-h-screen">
             <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
@@ -21,22 +21,23 @@ const TFSA = () => {
 
             <main className="container mx-auto px-4 py-8 min-h-screen bg-[#111827]">
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-4">All About Tax-Free Savings Accounts (TFSA)</h2>
+                    <h2 className="text-3xl font-bold mb-4">All About First Home Savings Accounts (FHSA)</h2>
                     <p className="text-gray-100">
-                        Learn how TFSA works, its benefits, contribution limits, and various investment options.
+                        Explore FHSA and how it can help you save for your first home purchase.
                     </p><br></br>
                     <p className="text-gray-100">
-                        A Tax-Free Savings Account (TFSA) is a registered account that allows Canadians to earn investment income tax-free. You can use a TFSA to save for any goal, whether it's a short-term goal like a new TV or a long-term goal like retirement. The TFSA complements other savings plans like pensions and registered retirement savings plans (RRSPs).
+                        A First Home Savings Account (FHSA) is a type of savings account that allows Canadians to save for their first home. The FHSA complements other savings plans like pensions and registered retirement savings plans (RRSPs).
                     </p>
                     <p className="text-gray-100">
-                        The TFSA contribution limit for 2023 is $7000.</p>
+                        The FHSA contribution limit for 2023 is $7000.
+                    </p>
 
                     {/* image */}
                     <div className="relative h-110 w-full mb-12 mt-12">
-                        <Image src="/tfsa.jpg" alt="TFSA" width={800} height={600} priority />
+                        <Image src="/fhsa.avif" alt="FHSA" width={800} height={600} priority />
                     </div>
                     <p className="text-gray-100">
-                        All TFSA contributions are made with after-tax dollars, and the money you contribute, as well as the income you earn in the account, is tax-free when you withdraw it. You can withdraw money from your TFSA at any time, for any reason, without paying tax on the withdrawal. You can also use your TFSA to save for a variety of short- and long-term goals, including retirement, a home purchase, or a vacation.
+                        The FHSA is designed to help Canadians save for their first home. The FHSA complements other savings plans like pensions and registered retirement savings plans (RRSPs). The FHSA contribution limit for 2023 is $7000.
                     </p>
 
                 </section>
@@ -45,4 +46,4 @@ const TFSA = () => {
     );
 }
 
-export default TFSA;
+export default FHSA;
