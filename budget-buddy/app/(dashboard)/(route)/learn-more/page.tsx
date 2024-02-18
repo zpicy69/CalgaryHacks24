@@ -18,9 +18,6 @@ const LearnMorePage = () => {
                     </p>
                 </div>
 
-                <div className="relative h-24 w-24">
-                    <Image src="/image.png" layout="fill" alt="Chart Logo" priority />
-                </div>
             </nav>
 
             <main className="container mx-auto px-4 py-8 min-h-screen bg-[#111827]">

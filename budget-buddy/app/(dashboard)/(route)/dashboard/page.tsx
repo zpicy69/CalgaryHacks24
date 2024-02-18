@@ -334,7 +334,7 @@ function MyComponent() {
             size="large"
             fullWidth={false}
           >
-          Contact Us
+            Contact Us
           </Button>
         </Link>
         <div className="flex gap-5 justify-between items-center mt-11 w-full max-w-screen-lg text-2xl max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
