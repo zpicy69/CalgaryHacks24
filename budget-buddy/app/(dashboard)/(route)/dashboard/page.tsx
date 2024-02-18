@@ -353,6 +353,13 @@ function MyComponent() {
           <div className="flex-auto self-stretch my-auto capitalize leading-[132%]">
             Take control of your financial future
           </div>
+          <div className="flex justify-center mt-4">
+          <div className="flex flex-col justify-center px-5 py-4 mt-8 w-70 max-w-full text-2xl font-semibold tracking-tight text-center whitespace-nowrap bg-teal-700 rounded-2xl shadow-2xl">
+  <Link href="/budget">
+    <span className="justify-center px-1.5 py-1 cursor-pointer">Back to Budget</span>
+  </Link>
+</div>
+    </div>
         </div>
       </div>
     </div>
