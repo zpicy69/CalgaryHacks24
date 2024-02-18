@@ -1,15 +1,18 @@
-// Code a design for how it works, track your expenses
-// Step 1: Enter the Money You Spent Last Month
-// BudgetBuddy automatically calculates the money you can save
+import Image from "next/image";
+import Link from "next/link";
 
-const LearnMoreLayout = ({ children }: { children: React.ReactNode; }) => {
+const DashboardLayout = ({ children }: {children: React.ReactNode}) => {
     return (
-        <main className="flex h-screen bg-[#080808] text-white overflow-auto">
-            <div className="m-auto w-full max-w-screen-xl px-4">
-                {children}
-            </div>
-        </main>
+        <div className="flex min-h-screen bg-[#111827] text-white">
+            <main className="flex-1 flex flex-col">
+                <header className="flex justify-between items-center p-6">
+                </header>
+                <div className="flex-1 p-6 overflow-auto">
+                    {children}
+                </div>
+            </main>
+        </div>
     );
-}
+};
 
-export default LearnMoreLayout;
+export default DashboardLayout;
