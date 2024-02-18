@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 function MyComponent() {
   return (
@@ -11,6 +12,11 @@ function MyComponent() {
             <div className="flex flex-col w-[41%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col mt-8 text-xl text-white max-md:mt-10 max-md:max-w-full">
                 <div className="self-center capitalize whitespace-nowrap leading-[160%]">
+                  <Link href="/">
+                      <button className="bg-teal-700 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded mb-12">
+                          <ArrowLeft size={24} />
+                      </button>
+                  </Link>
                 </div>
                 <div className="mt-32 text-7xl font-extrabold leading-[96.56px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
                   BudgetBuddy
