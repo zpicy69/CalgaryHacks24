@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function MyComponent(props) {
+function MyComponent() {
   return (
     <div className="flex flex-col pb-12 bg-zinc-900">
       <div className="flex flex-col self-center w-full max-w-[1276px] max-md:max-w-full">
@@ -350,10 +350,8 @@ function MyComponent(props) {
 const DashboardPage = () => {
     return (
         <div>
-            <h1>Dashboard</h1>
             <MyComponent />
         </div>
-
     );
 }
  
