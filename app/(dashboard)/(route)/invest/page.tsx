@@ -3,6 +3,8 @@
 
 'use client'
 
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
 // Sample data for stock categories and their corresponding stock picks
@@ -108,7 +110,9 @@ const StocksTable = () => {
             <nav className="flex justify-between items-start py-4 px-6 bg-[#111827] text-white">
                 <div className="flex-1 flex justify-center flex-col items-center text-center">
                     <div className="relative h-12 w-12">
-                        <img src="/logo.png" alt="Logo" />
+                        <Link className='cursor-pointer' href="/dashboard">
+                            <img src="/logo.png" alt="Logo" />
+                        </Link>
                     </div>
                     <h1 className="text-4xl font-bold mt-2">BudgetBuddy</h1>
                     <p className="mt-2">
