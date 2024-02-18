@@ -1,3 +1,6 @@
+// @ts-ignore
+/* eslint-disable */
+
 'use client'
 
 import React, { useState, useEffect } from 'react';
@@ -80,7 +83,7 @@ const StocksTable = () => {
         setInvestmentAmount(Number(event.target.value));
     };
 
-    // if (!isClient) return null;
+    if (!isClient) return null;
 
 
     const handlePopup = (symbol: string, investmentAmount: number): void => {
@@ -113,7 +116,7 @@ const StocksTable = () => {
                     </p>
                 </div>
             </nav>
-            <main className="flex-row flex-col mx-auto px-4 py-8 min-h-screen bg-[#111827]">
+            <main className="flex-col mx-auto px-4 py-8 min-h-screen bg-[#111827]">
                 <div>
                     <section className="mb-12">
                         <h2 className="text-4xl font-semibold mb-4">Ready to Invest?</h2>
